@@ -1,0 +1,91 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jun 25, 2022 6:15:44 PM
+
+#mekanism:dirty/zinc
+- jaopca:mekanism_dirty.zinc
+
+#mekanism:dirty
+- mekanism:dirty_iron
+- mekanism:dirty_gold
+- mekanism:dirty_osmium
+- mekanism:dirty_copper
+- mekanism:dirty_tin
+- mekanism:dirty_lead
+- mekanism:dirty_uranium
+- jaopca:mekanism_dirty.aluminum
+- jaopca:mekanism_dirty.cobalt
+- jaopca:mekanism_dirty.desh
+- jaopca:mekanism_dirty.draconium
+- jaopca:mekanism_dirty.nickel
+- jaopca:mekanism_dirty.silicon
+- jaopca:mekanism_dirty.silver
+- jaopca:mekanism_dirty.thallasium
+- jaopca:mekanism_dirty.zinc
+
+#mekanism:dirty/draconium
+- jaopca:mekanism_dirty.draconium
+
+#mekanism:dirty/desh
+- jaopca:mekanism_dirty.desh
+
+#mekanism:dirty/nickel
+- jaopca:mekanism_dirty.nickel
+
+#mekanism:clean/cobalt
+- jaopca:mekanism_clean.cobalt
+
+#mekanism:clean
+- mekanism:clean_iron
+- mekanism:clean_gold
+- mekanism:clean_osmium
+- mekanism:clean_copper
+- mekanism:clean_tin
+- mekanism:clean_lead
+- mekanism:clean_uranium
+- jaopca:mekanism_clean.aluminum
+- jaopca:mekanism_clean.cobalt
+- jaopca:mekanism_clean.desh
+- jaopca:mekanism_clean.draconium
+- jaopca:mekanism_clean.nickel
+- jaopca:mekanism_clean.silicon
+- jaopca:mekanism_clean.silver
+- jaopca:mekanism_clean.thallasium
+- jaopca:mekanism_clean.zinc
+
+#mekanism:clean/silicon
+- jaopca:mekanism_clean.silicon
+
+#mekanism:dirty/silver
+- jaopca:mekanism_dirty.silver
+
+#mekanism:clean/nickel
+- jaopca:mekanism_clean.nickel
+
+#mekanism:clean/draconium
+- jaopca:mekanism_clean.draconium
+
+#mekanism:clean/aluminum
+- jaopca:mekanism_clean.aluminum
+
+#mekanism:clean/thallasium
+- jaopca:mekanism_clean.thallasium
+
+#mekanism:clean/zinc
+- jaopca:mekanism_clean.zinc
+
+#mekanism:dirty/aluminum
+- jaopca:mekanism_dirty.aluminum
+
+#mekanism:clean/desh
+- jaopca:mekanism_clean.desh
+
+#mekanism:dirty/thallasium
+- jaopca:mekanism_dirty.thallasium
+
+#mekanism:dirty/cobalt
+- jaopca:mekanism_dirty.cobalt
+
+#mekanism:clean/silver
+- jaopca:mekanism_clean.silver
+
+#mekanism:dirty/silicon
+- jaopca:mekanism_dirty.silicon
