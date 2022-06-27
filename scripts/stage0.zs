@@ -1,3 +1,5 @@
+//压实腐肉块
+craftingTable.addShapeless("rotten_flesh_block", <item:kubejs:rotten_flesh_block> * 4, [<item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>]);
 //植育一号
 craftingTable.addShapeless("phytogro", <item:thermal:phytogro> * 4, [<item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:bone_meal>]);
 //橡木台阶
@@ -42,4 +44,12 @@ craftingTable.addShaped("peat_unbaked", <item:cyclic:peat_unbaked>, [
     [g, g, g],
     [g, <item:kubejs:garden_soil>, g],
     [g, g, g]
+]);
+//节点物品0
+val s = <item:kubejs:garden_soil>;
+val f = <item:mysticalagriculture:inferium_farmland>;
+craftingTable.addShaped("stage1_unlock", <item:kubejs:stage1_unlock>, [
+    [s, f, s],
+    [f, <item:minecraft:oak_sapling>, f],
+    [s, f, s]
 ]);

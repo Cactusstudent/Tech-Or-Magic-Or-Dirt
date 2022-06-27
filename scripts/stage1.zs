@@ -84,3 +84,9 @@ Orechid.main.registerOreWeight(<block:mekanism:tin_ore>, 25);
 Orechid.main.registerOreWeight(<block:mekanism:copper_ore>, 25);
 Orechid.main.registerOreWeight(<block:minecraft:redstone_ore>, 1);
 Orechid.main.registerOreWeight(<block:mekanism:lead_ore>, 13);
+//节点物品1
+craftingTable.addShaped("stage2_unlock", <item:kubejs:stage2_unlock>, [
+    [<item:mysticalagriculture:prosperity_shard>, <item:mysticalagriculture:inferium_essence>, <item:minecraft:iron_ore>],
+    [<item:mekanism:copper_ore>, <item:minecraft:air>, <item:minecraft:coal>],
+    [<item:mekanism:lead_ore>, <item:minecraft:redstone>, <item:mekanism:tin_ore>]
+]);
