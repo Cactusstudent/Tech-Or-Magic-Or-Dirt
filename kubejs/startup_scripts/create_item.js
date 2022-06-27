@@ -2,6 +2,10 @@ onEvent('item.registry', event => {
     event.create('quartz_dust').displayName('碎屑石英颗粒').maxStackSize(256)
     event.create('mixed_stone').displayName('有杂质的石头')
     event.create('stone_alloy').displayName('石头合金')
+    event.create('stage1_unlock').displayName('§a节点物品0')
+    event.create('stage2_unlock').displayName('§a节点物品1')
+    event.create('pulverizer_unlock').displayName('§a磨粉机核心')
+    event.create('smelter_unlock').displayName('§a感应炉核心')
   })
 
 onEvent('item.tooltip', tooltip => {
@@ -10,4 +14,8 @@ onEvent('item.tooltip', tooltip => {
   tooltip.add(['kubejs:quartz_dust'], '§7碎屑石英颗粒是击杀僵尸及其变种后掉落的，看起来有不小的用处')
   tooltip.add(['kubejs:rotten_flesh_block'], '§7腐肉做成的方块。这很酷，不是吗？即使硬度不高')
   tooltip.add(['kubejs:garden_soil'], '§7不能种植物？但是能做不少东西')
+  tooltip.add(['kubejs:stage1_unlock'], '§9§l可用于解锁阶段1')
+  tooltip.add(['kubejs:stage2_unlock'], '§9§l可用于解锁阶段2')
+  tooltip.add(['kubejs:pulverizer_unlock'], '§9§l应用于磨粉机合成中')
+  tooltip.add(['kubejs:smelter_unlock'], '§9§l应用于感应炉合成中')
 })
