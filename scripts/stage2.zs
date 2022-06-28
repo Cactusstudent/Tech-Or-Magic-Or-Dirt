@@ -15,4 +15,33 @@ craftingTable.addShaped("dynamo", <item:immersiveengineering:dynamo>, [
     [<item:immersiveengineering:coil_lv>, p, <item:immersiveengineering:coil_lv>]
 ]);
 //铜线圈
-craftingTable.removeRecipe()
+val c = <tag:items:forge:plates/copper>;
+val w = <tag:items:forge:wires/copper>;
+craftingTable.removeRecipe(<item:immersiveengineering:coil_lv>);
+craftingTable.addShaped("coil_lv", <item:immersiveengineering:coil_lv>, [
+    [c, w, c],
+    [w, <tag:items:forge:ingots/iron>, w],
+    [c, w, c]
+]);
+//基础反应堆
+val u = <item:powah:uraninite>;
+val b = <item:powah:capacitor_basic>;
+craftingTable.removeRecipe(<item:powah:reactor_starter>);
+craftingTable.addShaped("capacitor_basic", <item:powah:reactor_starter>, [
+    [u, b, u],
+    [b, <tag:items:industrialforegoing:machine_frame/simple>, b],
+    [u, b, u]
+]);
+//删除其余Powah反应堆配方
+craftingTable.removeRecipe(<item:powah:reactor_basic>);
+craftingTable.removeRecipe(<item:powah:reactor_hardened>);
+craftingTable.removeRecipe(<item:powah:reactor_blazing>);
+craftingTable.removeRecipe(<item:powah:reactor_niotic>);
+craftingTable.removeRecipe(<item:powah:reactor_spirited>);
+craftingTable.removeRecipe(<item:powah:reactor_nitro>);
+//FluxPower全模组合成更改
+import crafttweaker.api.recipe.Replacer;
+Replacer.forMods("fluxnetworks")
+    .replace(<item:fluxnetworks:flux_core>, <item:powah:ender_gate_starter>)
+    .execute();
+craftingTable.removeRecipe(<item:fluxnetworks:flux_block>);
