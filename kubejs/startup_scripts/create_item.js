@@ -6,6 +6,7 @@ onEvent('item.registry', event => {
     event.create('stage2_unlock').displayName('§a节点物品1')
     event.create('pulverizer_unlock').displayName('§a磨粉机核心')
     event.create('smelter_unlock').displayName('§a感应炉核心')
+    event.create('stage3_unlock').displayName('§a节点物品2')
   })
 
 onEvent('item.tooltip', tooltip => {
@@ -18,4 +19,5 @@ onEvent('item.tooltip', tooltip => {
   tooltip.add(['kubejs:stage2_unlock'], '§9§l可用于解锁阶段2')
   tooltip.add(['kubejs:pulverizer_unlock'], '§9§l应用于磨粉机合成中')
   tooltip.add(['kubejs:smelter_unlock'], '§9§l应用于感应炉合成中')
+  tooltip.add(['kubejs:stage3_unlock'], '§9§l可用于解锁阶段3')
 })
