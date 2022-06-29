@@ -7,7 +7,7 @@ onEvent('item.registry', event => {
     event.create('pulverizer_unlock').displayName('§a磨粉机核心')
     event.create('smelter_unlock').displayName('§a感应炉核心')
     event.create('stage3_unlock').displayName('§a节点物品2')
-  })
+})
 
 onEvent('item.tooltip', tooltip => {
   tooltip.add(['create:andesite_alloy'], '§4§l安山合金几乎被石头合金代替，若想寻找相关合成配方，请移步JEI')
@@ -19,5 +19,8 @@ onEvent('item.tooltip', tooltip => {
   tooltip.add(['kubejs:stage2_unlock'], '§9§l可用于解锁阶段2')
   tooltip.add(['kubejs:pulverizer_unlock'], '§9§l应用于磨粉机合成中')
   tooltip.add(['kubejs:smelter_unlock'], '§9§l应用于感应炉合成中')
-  tooltip.add(['kubejs:stage3_unlock'], '§9§l可用于解锁阶段3')
+  tooltip.add(['kubejs:stage3_unlock'], '§9§l可用于解锁阶段3、合成Thermal的机器框架')
+  tooltip.add(['kubejs:cobble_press_2'],'§9§l看起来和普通石头没什么区别')
+  tooltip.add(['kubejs:cobble_press_3'],'§9§l看起来和普通石头没什么区别')
+  tooltip.add(['kubejs:cobble_press_4'], '§9§l看起来只剩下了黑色。根据古书记载，将它丢进一个充满蓝色液体的池子后会变成黑曜石')
 })
