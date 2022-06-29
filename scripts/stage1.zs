@@ -55,6 +55,8 @@ mods.jei.JEI.hideItem(<item:create:sand_paper>);
 mods.jei.JEI.hideItem(<item:create:red_sand_paper>);
 //磨制玫瑰石英
 <recipetype:botania:mana_infusion>.addRecipe("rose_quartz", <item:create:polished_rose_quartz>, <item:create:rose_quartz>, 100);
+//下界石英
+craftingTable.addShapeless("quartz", <item:minecraft:quartz>, [<item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>]);
 //冶炼炉控制器
 <recipetype:tconstruct:casting_basin>.removeRecipe(<item:tconstruct:smeltery_controller>);
 //凝矿兰合成
@@ -76,14 +78,18 @@ import mods.botania.PetalApothecary;
 //凝矿兰产矿
 import mods.botania.Orechid;
 Orechid.main.clear();
-Orechid.main.registerOreWeight(<block:minecraft:coal_ore>, 250);
+Orechid.main.registerOreWeight(<block:minecraft:coal_ore>, 75);
 Orechid.main.registerOreWeight(<block:minecraft:iron_ore>, 50);
 Orechid.main.registerOreWeight(<block:mysticalagriculture:inferium_ore>, 150);
 Orechid.main.registerOreWeight(<block:mysticalagriculture:prosperity_ore>, 150);
 Orechid.main.registerOreWeight(<block:mekanism:tin_ore>, 25);
 Orechid.main.registerOreWeight(<block:mekanism:copper_ore>, 25);
-Orechid.main.registerOreWeight(<block:minecraft:redstone_ore>, 1);
+Orechid.main.registerOreWeight(<block:minecraft:redstone_ore>, 4);
 Orechid.main.registerOreWeight(<block:mekanism:lead_ore>, 13);
+Orechid.main.registerOreWeight(<block:powah:uraninite_ore_poor>, 7);
+Orechid.main.registerOreWeight(<block:powah:uraninite_ore>, 3);
+Orechid.main.registerOreWeight(<block:powah:uraninite_ore_dense>, 1);
+Orechid.main.registerOreWeight(<block:thermal:nickel_ore>, 3);
 //节点物品1
 craftingTable.addShaped("stage2_unlock", <item:kubejs:stage2_unlock>, [
     [<item:mysticalagriculture:prosperity_shard>, <item:mysticalagriculture:inferium_essence>, <item:minecraft:iron_ore>],

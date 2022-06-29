@@ -45,3 +45,16 @@ Replacer.forMods("fluxnetworks")
     .replace(<item:fluxnetworks:flux_core>, <item:powah:ender_gate_starter>)
     .execute();
 craftingTable.removeRecipe(<item:fluxnetworks:flux_block>);
+//化学溶解室
+craftingTable.removeRecipe(<item:industrialforegoing:dissolution_chamber>);
+craftingTable.addShaped("dissolution_chamber", <item:industrialforegoing:dissolution_chamber>, [
+    [<tag:items:forge:plastic>, <item:ironchest:iron_chest>, <tag:items:forge:plastic>],
+    [<item:minecraft:bucket>, <item:industrialforegoing:machine_frame_pity>, <item:minecraft:bucket>],
+    [<item:mekanism:ingot_copper>, <tag:items:forge:gears/lead>, <item:mekanism:ingot_copper>],
+]);
+//节点物品2
+craftingTable.addShaped("stage3_unlock", <item:kubejs:stage3_unlock>, [
+    [<tag:items:forge:plastic>, <tag:items:forge:gears/lead>, <tag:items:forge:plastic>],
+    [<item:powah:energy_cable_starter>, <item:industrialforegoing:machine_frame_pity>, <item:powah:energy_cable_starter>],
+    [<tag:items:forge:plastic>, <tag:items:forge:gears/lead>, <tag:items:forge:plastic>]
+]);
