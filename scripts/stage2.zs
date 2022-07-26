@@ -56,5 +56,5 @@ craftingTable.addShaped("dissolution_chamber", <item:industrialforegoing:dissolu
 craftingTable.addShaped("stage3_unlock", <item:kubejs:stage3_unlock>, [
     [<tag:items:forge:plastic>, <tag:items:forge:gears/lead>, <tag:items:forge:plastic>],
     [<item:powah:energy_cable_starter>, <item:industrialforegoing:machine_frame_pity>, <item:powah:energy_cable_starter>],
-    [<tag:items:forge:plastic>, <tag:items:forge:gears/lead>, <tag:items:forge:plastic>]
+    [<item:powah:steel_energized>, <tag:items:forge:gears/lead>, <item:powah:steel_energized>]
 ]);

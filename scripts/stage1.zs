@@ -15,10 +15,13 @@ val s = <item:kubejs:stone_alloy>;
 val p = <tag:items:minecraft:planks>;
 val a = <item:minecraft:air>;
 craftingTable.addShapedMirrored("stone_alloy", <item:kubejs:stone_alloy>, [
-    [s, p, a],
-    [p, s, a],
+    [<tag:items:forge:stone>, p, a],
+    [p, <tag:items:forge:stone>, a],
     [a, a, a]
 ]);
+//删除原先Create齿轮合成
+<recipetype:create:sequenced_assembly>.removeByName("create:sequenced_assembly/cogwheel");
+<recipetype:create:sequenced_assembly>.removeByName("create:sequenced_assembly/large_cogwheel");
 //粉碎轮
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:crushing_wheel>);
 craftingTable.addShaped("crushing_wheel", <item:create:crushing_wheel> * 2, [
@@ -55,6 +58,13 @@ mods.jei.JEI.hideItem(<item:create:sand_paper>);
 mods.jei.JEI.hideItem(<item:create:red_sand_paper>);
 //磨制玫瑰石英
 <recipetype:botania:mana_infusion>.addRecipe("rose_quartz", <item:create:polished_rose_quartz>, <item:create:rose_quartz>, 100);
+//电子管
+craftingTable.removeRecipe(<item:create:electron_tube>);
+craftingTable.addShaped("electron_tube", <item:create:electron_tube>, [
+    [a, <item:minecraft:redstone_torch>, a],
+    [a, <item:create:polished_rose_quartz>, a],
+    [a, <item:kubejs:quartz_dust>, a],
+]);
 //下界石英
 craftingTable.addShapeless("quartz", <item:minecraft:quartz>, [<item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>, <item:kubejs:quartz_dust>]);
 //冶炼炉控制器
@@ -62,6 +72,13 @@ craftingTable.addShapeless("quartz", <item:minecraft:quartz>, [<item:kubejs:quar
 //凝矿兰合成
 val n = <item:minecraft:stone>;
 <recipetype:create:mechanical_crafting>.addRecipe("orechid", <item:botania:orechid>, [[l, l, l, l], [l, <tag:items:rftoolsutility:living/living>, <item:botania:diluted_pool>, l], [l, <item:botania:rune_earth>, <item:botania:rune_water>, l], [l, l, l, l,]]);
+//动力合成器
+craftingTable.removeRecipe(<item:create:mechanical_crafter>);
+craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> * 4, [
+    [a, <item:create:electron_tube>, a],
+    [<item:create:cogwheel>, <item:minecraft:oak_log>, <item:create:cogwheel>],
+    [a, <item:minecraft:crafting_table>, a]
+]);
 //符文合成
 import mods.botania.RuneAltar;
 <recipetype:botania:runic_altar>.removeRecipe(<item:botania:rune_earth>);
@@ -90,6 +107,7 @@ Orechid.main.registerOreWeight(<block:powah:uraninite_ore_poor>, 7);
 Orechid.main.registerOreWeight(<block:powah:uraninite_ore>, 3);
 Orechid.main.registerOreWeight(<block:powah:uraninite_ore_dense>, 1);
 Orechid.main.registerOreWeight(<block:thermal:nickel_ore>, 3);
+Orechid.main.registerOreWeight(<block:minecraft:gold_ore>, 2);
 //节点物品1
 craftingTable.addShaped("stage2_unlock", <item:kubejs:stage2_unlock>, [
     [<item:mysticalagriculture:prosperity_shard>, <item:mysticalagriculture:inferium_essence>, <item:minecraft:iron_ore>],

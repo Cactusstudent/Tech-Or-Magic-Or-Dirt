@@ -1,3 +1,5 @@
+//污泥精炼机
+craftingTable.removeRecipe(<item:industrialforegoing:sludge_refiner>);
 //压实腐肉块
 craftingTable.addShapeless("rotten_flesh_block", <item:kubejs:rotten_flesh_block> * 4, [<item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>]);
 //植育一号

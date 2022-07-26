@@ -65,3 +65,22 @@ craftingTable.addShaped("machine_smelter", <item:thermal:machine_smelter>, [
 //磨粉机核心，合金炉核心
 <recipetype:create:mechanical_crafting>.addRecipe("pulverizer_unlock", <item:kubejs:pulverizer_unlock>, [[<item:minecraft:air>, <item:minecraft:piston>, <item:minecraft:air>], [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>], [<item:thermal:lead_gear>, <item:kubejs:stage3_unlock>, <item:thermal:lead_gear>], [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>], [<item:minecraft:air>, <item:minecraft:piston>, <item:minecraft:air>]]);
 <recipetype:create:mechanical_crafting>.addRecipe("smelter_unlock", <item:kubejs:smelter_unlock>, [[<item:minecraft:air>, <tag:items:forge:coal_coke>, <item:minecraft:air>], [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>], [<item:thermal:lead_gear>, <item:kubejs:stage3_unlock>, <item:thermal:lead_gear>], [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>], [<item:minecraft:air>, <tag:items:forge:coal_coke>, <item:minecraft:air>]]);
+//高炉砖
+craftingTable.removeRecipe(<item:immersiveengineering:blastbrick>);
+<recipetype:thermal:furnace>.addRecipe("blastbrick_wip", <item:kubejs:blastbrick_wip>, <item:immersiveengineering:cokebrick>, 2, 800);
+val n = <tag:items:forge:ingots/nether_brick>;
+val k = <tag:items:forge:ingots/brick>;
+craftingTable.addShaped("blastbrick", <item:immersiveengineering:blastbrick>, [
+    [a, n, a],
+    [k, <item:kubejs:blastbrick_wip>, k],
+    [a, n, a]
+]);
+//删除Space-BossTools高炉
+craftingTable.removeRecipe(<item:boss_tools:blast_furnace>);
+craftingTable.removeRecipe(<item:boss_tools_giselle_addon:electric_blast_furnace>);
+//节点物品3
+craftingTable.addShaped("stage4_unlock", <item:kubejs:stage4_unlock>, [
+    [a, <tag:items:forge:storage_blocks/steel>, a],
+    [<item:thermal:redstone_servo>, <item:thermal:machine_frame>, <item:thermal:rf_coil>],
+    [a, <tag:items:forge:storage_blocks/steel>, a]
+]);
