@@ -44,6 +44,16 @@ nether.registerOreWeight(<block:tconstruct:cobalt_ore>, 2);
 nether.registerOreWeight(<block:minecraft:nether_quartz_ore>, 25);
 nether.registerOreWeight(<block:minecraft:nether_gold_ore>, 10);
 nether.registerOreWeight(<block:minecraft:ancient_debris>, 1);
+/*nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+nether.registerOreWeight();
+*/
 //烘干池
 craftingTable.removeRecipe(<item:integrateddynamics:mechanical_drying_basin>);
 craftingTable.addShaped("drying_basin", <item:integrateddynamics:mechanical_drying_basin>, [

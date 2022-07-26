@@ -1,6 +1,5 @@
 onEvent('item.registry', event => {
-    event.create('quartz_dust').displayName('碎屑石英颗粒').maxStackSize(256)
-    event.create('mixed_stone').displayName('有杂质的石头')
+    event.create('quartz_dust').displayName('碎屑石英颗粒')
     event.create('stone_alloy').displayName('石头合金')
     event.create('stage1_unlock').displayName('§a节点物品0§r')
     event.create('stage2_unlock').displayName('§a节点物品1§r')
@@ -22,6 +21,6 @@ onEvent('item.tooltip', tooltip => {
   tooltip.add(['kubejs:stage3_unlock'], '§9§l可用于解锁阶段3、合成Thermal Series的机器框架§r')
   tooltip.add(['kubejs:cobble_press_2'],'§9§l看起来和普通石头没什么区别§r')
   tooltip.add(['kubejs:cobble_press_3'],'§9§l看起来和普通石头没什么区别§r')
-  tooltip.add(['kubejs:cobble_press_4'], '§9§l看起来只剩下了黑色。根据古书记载，将它丢进一个充满蓝色液体的池子后会变成黑曜石§r')
+  tooltip.add(['kubejs:cobble_press_4'], '§9§l看起来只剩下了黑色。根据古书记载，将它丢进一个充满蓝色液体的池子后会变成黑曜石§r\n§4§l请不要尝试将其放在地上，这很可能需要花费你很长时间以挖下它§r')
   tooltip.add(['kubejs:blastbrick_wip'], '§9§l表面满是裂纹，根据古籍的记载，它与某些物品一起合成，可以制作高炉砖§r')
 })
